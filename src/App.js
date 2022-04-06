@@ -5,10 +5,12 @@ import "tailwindcss/tailwind.css";
 function App() {
   return (
     <>
-      <p className="text-2xl font-mono text-center py-5">
-        Jumlah Kasus di Indonesia Saat Ini
-      </p>
-      <CovidAPI />
+      <div className="container mx-auto py-5">
+        <p className="text-2xl font-bold font-mono text-center py-5">
+          Jumlah Kasus di Indonesia Saat Ini
+        </p>
+        <CovidAPI />
+      </div>
     </>
   );
 }
