@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
+import Card from "./Card";
 import moment from "moment";
 import "moment/locale/id";
-import CountUp from "react-countup";
 
 const CovidAPI = () => {
   const [data, setData] = useState([]);
@@ -27,58 +27,10 @@ const CovidAPI = () => {
     <div>
       <section>
         <div className="flex flex-wrap">
-          <div className="w-6/12 px-4 pb-6">
-            <div className="bg-white rounded-lg p-8 text-center">
-              <p className="text-5xl font-mono text-yellow-400">
-                <CountUp
-                  start={0}
-                  end={data.positif}
-                  duration={2}
-                  separator="."
-                />
-              </p>
-              <p className="text-lg font-sans">Terkonfirmasi</p>
-            </div>
-          </div>
-          <div className="w-6/12 px-4 pb-6">
-            <div className="bg-white rounded-lg p-8 text-center">
-              <p className="text-5xl font-mono text-orange-400">
-                <CountUp
-                  start={0}
-                  end={data.dirawat}
-                  duration={2}
-                  separator="."
-                />
-              </p>
-              <p className="text-lg font-sans">Dalam Perawatan</p>
-            </div>
-          </div>
-          <div className="w-6/12 px-4 pb-6">
-            <div className="bg-white rounded-lg p-8 text-center">
-              <p className="text-5xl font-mono text-green-700">
-                <CountUp
-                  start={0}
-                  end={data.sembuh}
-                  duration={2}
-                  separator="."
-                />
-              </p>
-              <p className="text-lg font-sans">sembuh</p>
-            </div>
-          </div>
-          <div className="w-6/12 px-4 pb-6">
-            <div className="bg-white rounded-lg p-8 text-center">
-              <p className="text-5xl font-mono text-red-600">
-                <CountUp
-                  start={0}
-                  end={data.meninggal}
-                  duration={2}
-                  separator="."
-                />
-              </p>
-              <p className="text-lg font-sans">meninggal</p>
-            </div>
-          </div>
+          <Card value= {data.positif} cardTitle= {"Terkonfirmasi"} textColor= {"text-yellow-400"}/>
+          <Card value= {data.dirawat} cardTitle= {"Dalam Perawatan"} textColor= {"text-orange-400"}/>
+          <Card value= {data.sembuh} cardTitle= {"Sembuh"} textColor= {"text-green-700"}/>
+          <Card value= {data.meninggal} cardTitle= {"Meninggal"} textColor= {"text-red-600"}/>
         </div>
         <section>
           <p className="text-sm font-sans pl-3">* Pembaharuan Terakhir </p>
