@@ -26,11 +26,27 @@ const CovidAPI = () => {
   return (
     <div>
       <section>
-        <div className="flex flex-wrap">
-          <Card value= {data.positif} cardTitle= {"Terkonfirmasi"} textColor= {"text-yellow-400"}/>
-          <Card value= {data.dirawat} cardTitle= {"Dalam Perawatan"} textColor= {"text-orange-400"}/>
-          <Card value= {data.sembuh} cardTitle= {"Sembuh"} textColor= {"text-green-700"}/>
-          <Card value= {data.meninggal} cardTitle= {"Meninggal"} textColor= {"text-red-600"}/>
+        <div className="sm:flex flex-wrap">
+          <Card
+            value={data.positif}
+            cardTitle={"Terkonfirmasi"}
+            textColor={"text-yellow-400"}
+          />
+          <Card
+            value={data.dirawat}
+            cardTitle={"Dalam Perawatan"}
+            textColor={"text-orange-400"}
+          />
+          <Card
+            value={data.sembuh}
+            cardTitle={"Sembuh"}
+            textColor={"text-green-700"}
+          />
+          <Card
+            value={data.meninggal}
+            cardTitle={"Meninggal"}
+            textColor={"text-red-600"}
+          />
         </div>
         <section>
           <p className="text-sm font-sans pl-3">* Pembaharuan Terakhir </p>
