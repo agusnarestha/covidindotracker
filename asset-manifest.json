@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/covidindotracker/static/css/main.03bc7bdd.css",
-    "main.js": "/covidindotracker/static/js/main.b24a63ff.js",
+    "main.js": "/covidindotracker/static/js/main.5de0750d.js",
     "static/js/787.ee9089c2.chunk.js": "/covidindotracker/static/js/787.ee9089c2.chunk.js",
     "index.html": "/covidindotracker/index.html",
     "main.03bc7bdd.css.map": "/covidindotracker/static/css/main.03bc7bdd.css.map",
-    "main.b24a63ff.js.map": "/covidindotracker/static/js/main.b24a63ff.js.map",
+    "main.5de0750d.js.map": "/covidindotracker/static/js/main.5de0750d.js.map",
     "787.ee9089c2.chunk.js.map": "/covidindotracker/static/js/787.ee9089c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03bc7bdd.css",
-    "static/js/main.b24a63ff.js"
+    "static/js/main.5de0750d.js"
   ]
 }
