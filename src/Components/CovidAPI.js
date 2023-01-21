@@ -49,9 +49,16 @@ const CovidAPI = () => {
           />
         </div>
         <section>
-          <p className="text-sm font-sans pl-3">* Pembaharuan Terakhir </p>
+          <p className="text-sm font-sans pl-3">
+            {data.lastUpdate === undefined
+              ? "Error - Gagal mengambil data terbaru"
+              : "*Pembaharuan Terakhir"}
+          </p>
           <p className="text-base font-mono pl-3">
-            {moment(data.lastUpdate).locale("id").format("LLL")} +07:00
+            {data.lastUpdate === undefined
+              ? "Gagal mengambil data. Mohon coba lagi dalam beberapa saat."
+              : moment(data.lastUpdate).locale("id").format("LLL")}
+            {""}
           </p>
         </section>
       </section>
