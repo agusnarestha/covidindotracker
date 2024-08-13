@@ -4,7 +4,7 @@ Website ini dibuat untuk memantau secara realtime jumlah covid yang ada di Indon
 
 
 ### Demo 
-https://agusnarestha.github.io/covidindotracker/
+https://covidtracker.agusnarestha.dev
 
 #### Dibuat dengan :
 
